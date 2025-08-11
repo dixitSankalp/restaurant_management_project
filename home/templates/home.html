@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Management</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Restaurant System</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Welcome to Restaurant Manager</h1>
+            <p>Manage restaurants, menus, and orders all in one place.</p>
+            <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <div class="container mt-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm p-3">
+                    <h5>Register Restaurant</h5>
+                    <p>Start managing your restaurant by registering today.</p>
+                    <a href="#" class="btn btn-outline-primary">Register</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm p-3">
+                    <h5>View Menu</h5>
+                    <p>Explore delicious menu items and manage them easily.</p>
+                    <a href="#" class="btn btn-outline-success">View Menu</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm p-3">
+                    <h5>Orders</h5>
+                    <p>Track and manage customer orders efficiently.</p>
+                    <a href="#" class="btn btn-outline-warning">Manage Orders</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
