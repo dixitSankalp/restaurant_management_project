@@ -3,57 +3,44 @@
 <html>
 <head>
     <title>Restaurant Management</title>
-
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CDN (optional for layout & colors) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
-<body>
+<body style="font-family: Arial, sans-serif; background-color: #f8f9fa; margin: 0; padding: 0;">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Restaurant System</a>
+    <nav style="background-color: #343a40; padding: 15px;">
+        <div style="max-width: 1100px; margin: auto; color: white; font-size: 20px; font-weight: bold;">
+            Restaurant System
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
-            <h1>Welcome to Restaurant Manager</h1>
-            <p>Manage restaurants, menus, and orders all in one place.</p>
-            <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+    <div style="text-align: center; padding: 50px 20px; background-color: white; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 30px;">
+        <h1 style="font-size: 2.5rem; color: #333; margin-bottom: 15px;">Welcome to Restaurant Manager</h1>
+        <p style="font-size: 1.1rem; color: #666; max-width: 600px; margin: auto;">
+            Manage restaurants, menus, and orders with ease — everything you need in one place.
+        </p>
+        <a href="#" style="display: inline-block; background-color: #007bff; color: white; padding: 10px 20px; border-radius: 5px; margin-top: 20px; text-decoration: none;">
+            Get Started
+        </a>
+    </div>
+
+    <!-- Features Section -->
+    <div style="max-width: 1100px; margin: auto; display: flex; gap: 20px; flex-wrap: wrap; padding: 0 20px;">
+        <div style="flex: 1; min-width: 250px; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center;">
+            <h3 style="color: #007bff;">Register Restaurant</h3>
+            <p style="color: #555;">Quickly add your restaurant details and start managing right away.</p>
         </div>
-    </section>
 
-    <!-- Cards Section -->
-    <div class="container mt-5">
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card shadow-sm p-3">
-                    <h5>Register Restaurant</h5>
-                    <p>Start managing your restaurant by registering today.</p>
-                    <a href="#" class="btn btn-outline-primary">Register</a>
-                </div>
-            </div>
+        <div style="flex: 1; min-width: 250px; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center;">
+            <h3 style="color: #28a745;">View Menu</h3>
+            <p style="color: #555;">Easily view and update your restaurant's menu offerings.</p>
+        </div>
 
-            <div class="col-md-4">
-                <div class="card shadow-sm p-3">
-                    <h5>View Menu</h5>
-                    <p>Explore delicious menu items and manage them easily.</p>
-                    <a href="#" class="btn btn-outline-success">View Menu</a>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card shadow-sm p-3">
-                    <h5>Orders</h5>
-                    <p>Track and manage customer orders efficiently.</p>
-                    <a href="#" class="btn btn-outline-warning">Manage Orders</a>
-                </div>
-            </div>
+        <div style="flex: 1; min-width: 250px; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center;">
+            <h3 style="color: #ffc107;">Manage Orders</h3>
+            <p style="color: #555;">Track and handle all customer orders in one place.</p>
         </div>
     </div>
 
