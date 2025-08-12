@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About {{ restaurant.name|default:"Our Restaurant" }}</title>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; padding: 50px; background-color: #fff3e0;">
+    <h1>About {{ restaurant.name|default:"Our Restaurant" }}</h1>
+    
+    <p style="max-width: 600px; margin: auto;">
+        Welcome to {{ restaurant.name|default:"Our Restaurant" }}! We are located in {{ restaurant.city|default:"your city" }} and
+        specialize in providing delicious food made with love and care. 
+        Our mission is to bring people together over great meals.
+    </p>
+    
+    {% if restaurant.image %}
+        <img src="{{ restaurant.image.url }}" alt="Restaurant Image" style="margin-top: 20px; max-width: 400px; border-radius: 10px;">
+    {% else %}
+        <img src="https://via.placeholder.com/400" alt="Restaurant Image" style="margin-top: 20px; border-radius: 10px;">
+    {% endif %}
+    
+    <p style="margin-top: 30px;">
+        <a href="/" style="color: #ff5722; text-decoration: none;">🏠 Back to Home</a>
+    </p>
+</body>
+</html>
