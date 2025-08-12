@@ -4,6 +4,11 @@
     <title>{{ restaurant_name|default:"My Restaurant" }}</title>
 </head>
 <body style="font-family: Arial, sans-serif; text-align: center; padding: 50px; background-color: #f8f9fa;">
+    <nav style="margin-bottom: 20px;">
+        <a href="/" style="margin: 0 10px; text-decoration: none; color: #333;">Home</a>
+        <a href="/about/" style="margin: 0 10px; text-decoration: none; color: #333;">About</a>
+    </nav>
+    
     <h1>Welcome to {{ restaurant_name|default:"Our Restaurant" }}</h1>
     <p>Manage your restaurant with ease.</p>
 </body>
