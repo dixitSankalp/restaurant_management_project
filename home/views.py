@@ -1,5 +1,10 @@
 from django.shortcuts import render
+from account.models import Restaurant  
 
-# Create your views here.
 def homepage(request):
-    return render(request, 'home.html')
+    restaurant_name = None
+    restaurant = Restaurant.objects.first()
+    if restaurant:
+        restaurant_name = restaurant.name
+    
+    return render(request, 'home.html', {'restaurant_name': restaurant_name})
