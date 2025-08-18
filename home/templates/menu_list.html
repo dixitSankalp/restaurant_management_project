@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #ff6347;
+        }
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        th {
+            background: #ff6347;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+        .unavailable {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Menu</h1>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Price (₹)</th>
+            <th>Status</th>
+        </tr>
+        {% for item in menu_items %}
+        <tr>
+            <td>{{ item.name }}</td>
+            <td>{{ item.price }}</td>
+            <td>
+                {% if item.available %}
+                    ✅ Available
+                {% else %}
+                    ❌ <span class="unavailable">Not Available</span>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
