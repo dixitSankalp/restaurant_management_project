@@ -8,3 +8,6 @@ def homepage(request):
         "restaurant_name": restaurant_name,
         "restaurant_phone": restaurant_phone,
     })
+
+def contact_us(request):
+    return render(request, "home/contact.html")
